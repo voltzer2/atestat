@@ -42,6 +42,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            grInt = new int[20];
+            matrice = new int[20, 20];
             panel1.BackColor = Color.White;
             timer2 = new Timer();
             timer3= new Timer();
@@ -141,8 +143,6 @@ namespace WindowsFormsApp1
         private void buttonInserareArce_Click(object sender, EventArgs e)
         {
             timer3.Stop();
-            grInt = new int[20];
-            matrice = new int[20, 20];
             timer2.Tick += new EventHandler(OnTick);
             salvare[0] = 0;
             salvare[1] = 0;
