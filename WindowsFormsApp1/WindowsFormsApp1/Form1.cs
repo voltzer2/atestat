@@ -508,14 +508,14 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
-                        int nodcur = nodCurent + 1, x01 = x0 + 1;
+                        int nodcur = nodCurent + 1, x01 = x0  +1;
                         richTextBox1.Text = "De la nodul " + x01 + " la " + nodcur + " costul drumului este " + D[nodCurent];
                         textBoxRezultat.Text = Convert.ToString(x0 + 1) + " ";
                         afisare_drum(nodCurent);
                     }
                 }
                 else
-                    richTextBox1.Text = "Apasati din nou START pentru ca de la nodul " + x0 + " la nodul " + x0 + " nu exista drum";
+                    richTextBox1.Text = "Apasati din nou START pentru ca de la nodul " + x0+1 + " la nodul " + x0+1 + " nu exista drum";
                 nodCurent++;
                 buttonDijkstra.Enabled = true;
             }
